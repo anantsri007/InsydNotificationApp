@@ -38,7 +38,7 @@ export default function Post() {
   const [message, setMessage] = useState('');
 
   const userId = '6870dc5ae58052b935a406c4';
-  const API_BASE = 'https://insydnotificationapp.onrender.com';
+  const API_BASE = 'https://insydnotificationapp.onrender.com/';
 
   const handlePost = () => {
     if (!content.trim()) {
