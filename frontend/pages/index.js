@@ -40,7 +40,7 @@ export default function Home() {
   const [loading, setLoading] = useState(true);
 
   const userId = '6870dc5ae58052b935a406c4';
-  const API_BASE = 'https://insydnotificationapp.onrender.com';
+  const API_BASE = 'https://insydnotificationapp.onrender.com/';
 
   useEffect(() => {
     axios.get(`${API_BASE}/api/notifications/user`, {
