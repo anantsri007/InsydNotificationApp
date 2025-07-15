@@ -23,6 +23,14 @@ mongoose.connect(mongoURI, {
 .then(() => console.log('✅ Connected to MongoDB Atlas'))
 .catch((err) => console.error('❌ MongoDB connection error:', err));
 
+
+app.get('/', (req, res) => {
+  res.send('Backend is live!');
+});
+
+
+
+
 // Routes
 app.use('/api/notifications', notificationRoutes);
 
